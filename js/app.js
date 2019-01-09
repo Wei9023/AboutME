@@ -1,3 +1,4 @@
+'use strict';
 
 alert('Here are five questions for you to get to know me! Let\'s begin!');
 
