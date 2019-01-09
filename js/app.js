@@ -16,7 +16,7 @@ if ( upCode === 'Y'|| upCode === 'YES') {
 
 //question2
 var students = prompt('Are you learning coding right now?');
-console.log('Do I like coding?', students);
+console.log('Are you learning coding right now?', students);
 var upStudents = students.toUpperCase();
 if ( upStudents === 'Y'|| upStudents === 'YES') {
     alert('Good guessing. Let\'s try the next one!');
