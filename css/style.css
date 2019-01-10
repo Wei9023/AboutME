@@ -1,5 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(232, 216, 247)
 }
 
 h1 {
@@ -12,7 +13,7 @@ h1 {
 
 h2{
     background-color: #555;
-    color: white;
+    color:blueviolet;
     padding: 15px;
     font-size: 20px;
     font-weight: bold;
@@ -21,18 +22,40 @@ h2{
 
 p {
     margin: 15px;
+    padding: 5px, 0;
 }
 
 img {
     width: 150px;
     height: 150px;
     margin: 15px;
+    border: 3px solid blueviolet;
+    padding: 5px;
 }
 
-ul{
-    border : 2px solid #444;
+table ,li {
+    margin: 15px;  
+}
+
+table td, table th{
+    border: 2px solid #111;
+    padding: 10px 10px;
+}
+
+th {
+    background-color: #444;
+    color: blueviolet;
+}
+
+ul>li {
+    background-color: blueviolet;
+    padding: 10px 10px;
 }
 
 li {
-    margin: 15px;
+    display: inline-block;
+}
+
+.places {
+    font-family: 'Indie Flower', cursive;
 }
