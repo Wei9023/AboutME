@@ -82,7 +82,7 @@ function questionFive() {
     console.log('Do I have a lot of clutter in my code?', clutter);
     var upClutter = clutter.toUpperCase();
     if ( upClutter === 'N'|| upClutter === 'NO') {
-        alert('Of cousre not. Congratulations, you finished!');
+        alert('Of cousre not. Congratulations!');
         countCorrect += 1 ;
     } else if ( upClutter === 'Y'|| upClutter === 'YES') {
         alert('I don\'t think so. I will always try me best to write clean code.');
@@ -98,6 +98,7 @@ function questionSix() {
         var numbers = prompt('What\'s my favourate number between 1 to 10?');
         console.log('What\'s my favourate number between 1 to 10?', numbers);
         //answer is 3
+        var chanceT = 3 - i; 
         if ( parseInt(numbers) === 3 ){
             alert('Yeah. Correct!');
             countCorrect += 1 ;
@@ -108,8 +109,13 @@ function questionSix() {
             } else {
                 alert('Too low, try a bigger one');
             }
+            if (chanceT > 0){
+                alert('You still have ' + chanceT + ' chance')
+            } else {
+                alert('end of this question.')
+            }
         }
-        i++;
+        i++;        
     }
 }
 
@@ -117,12 +123,14 @@ function questionSix() {
 function questionSeven() {
     var places = [ 'NORTHGATE', 'KENMORE', 'SOUTH LAKE UNION'];
     var chance = false;
+    
     for(var i=0 ; i < 6; i++){
         var guessP = prompt('Do you know a place that I have lived in big Seattle?');
         console.log('Do you know a place that I have lived in big Seattle?', guessP);
-        var upGuess = guessP.toUpperCase(); 
+        var upGuess = guessP.toUpperCase();
         var addMatch = false;
         var chance = true;
+        var chanceTime = 5- i;
         for( var j = 0 ; j < places.length ; j++){
             if (upGuess === places[j] ){
                 countCorrect += 1 ;
@@ -136,6 +144,9 @@ function questionSeven() {
         } else {
             break;
         } 
+        if (chanceTime > 0){
+            alert('You still have ' + chanceTime + ' chance')
+        }
         if(!chance) {
             alert('Sorry, all of your answers are wrong. I have lived in South lake union, Northgate and Kenmore.');
         }
