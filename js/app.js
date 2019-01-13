@@ -40,3 +40,19 @@ function questionTwo() {
     }
 }
 questionTwo();
+
+//question3
+function questionThree() {
+    var editor = prompt('Am I using sublime as editor?');
+    console.log('Am I using sublime as editor?', editor);
+    var upEditor = editor.toUpperCase();
+    if ( upEditor === 'N'|| upEditor === 'NO') {
+        alert('You\'re right. I\'m using VS Code!');
+        countCorrect += 1 ;
+    } else if( upEditor === 'Y'|| upEditor === 'YES'){
+        alert('No, I\'m not. I know sublime is popular.');
+    } else {
+        alert('Please use yes/no to answer questions.');
+    }
+}
+questionThree();
