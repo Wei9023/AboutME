@@ -25,3 +25,18 @@ function questionOne() {
 }
 questionOne();
 
+//question2
+function questionTwo() {
+    var students = prompt('Am I learning coding right now?');
+    console.log('Are you learning coding right now?', students);
+    var upStudents = students.toUpperCase();
+    if ( upStudents === 'Y'|| upStudents === 'YES') {
+        alert('Good guessing. Let\'s try the next one!');
+        countCorrect += 1 ;
+    } else if ( upStudents === 'N' || upStudents === 'NO'){
+        alert('Wrong answer! I\'m now a CodeFellows student.');
+    } else {
+        alert('Please use yes/no to answer questions.');
+    }
+}
+questionTwo();
