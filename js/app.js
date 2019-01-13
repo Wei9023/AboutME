@@ -56,3 +56,19 @@ function questionThree() {
     }
 }
 questionThree();
+
+//question4
+function questionFour() {
+    var version = prompt('Am I using Github for version control?');
+    console.log('Am I using the Github for version control?', version);
+    var upVersion = version.toUpperCase();
+    if ( upVersion === 'Y'|| upVersion === 'YES') {
+        alert('Yes. Using it everyday!');
+        countCorrect += 1 ;
+    } else if ( upVersion === 'N'|| upVersion === 'NO'){
+        alert('Wrong answer!');
+    } else {
+        alert('Please use yes/no to answer questions.');
+    }
+}
+questionFour();
