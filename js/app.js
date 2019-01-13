@@ -72,3 +72,19 @@ function questionFour() {
     }
 }
 questionFour();
+
+//question5
+function questionFive() {
+    var clutter = prompt('Do I have a lot of clutter in my code?');
+    console.log('Do I have a lot of clutter in my code?', clutter);
+    var upClutter = clutter.toUpperCase();
+    if ( upClutter === 'N'|| upClutter === 'NO') {
+        alert('Of cousre not. Congratulations!');
+        countCorrect += 1 ;
+    } else if ( upClutter === 'Y'|| upClutter === 'YES') {
+        alert('I don\'t think so. I will always try me best to write clean code.');
+    } else {
+        alert('Please use yes/no to answer questions.');
+    }
+}
+questionFive();
