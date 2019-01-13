@@ -117,3 +117,47 @@ function questionSix() {
     }
 }
 questionSix();
+
+//question7
+function questionSeven() {
+    var places = [ 'NORTHGATE', 'KENMORE', 'SOUTH LAKE UNION'];
+    var chance = false;
+    
+    for(var i=0 ; i < 6; i++){
+        var guessP = prompt('Do you know a place that I have lived in big Seattle?');
+        console.log('Do you know a place that I have lived in big Seattle?', guessP);
+        var upGuess = guessP.toUpperCase();
+        var addMatch = false;
+        var chance = true;
+        var chanceTime = 5- i;
+        for( var j = 0 ; j < places.length ; j++){
+            if (upGuess === places[j] ){
+                countCorrect += 1 ;
+                addMatch = true;
+                alert('Good guessing. I have lived in South lake union, Northgate and Kenmore.');
+                break;
+            } 
+        }
+        if (!addMatch){
+            alert('No, I haven\'t lived there. Try another place.');  
+        } else {
+            break;
+        } 
+        if (chanceTime > 0){
+            alert('You still have ' + chanceTime + ' chance')
+        }
+        if(!chance) {
+            alert('Sorry, all of your answers are wrong. I have lived in South lake union, Northgate and Kenmore.');
+        }
+    }
+}
+questionSeven();
+
+
+
+//counting the right anwers
+if(countCorrect === 7){
+    alert('Awsome! All the answers are correct. Do you know me?')
+} else {
+    alert('You got ' + countCorrect + 'out of 7 questions correct,  ' + user + '! ' + 'Better luck next time.')
+}
