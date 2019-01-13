@@ -88,3 +88,32 @@ function questionFive() {
     }
 }
 questionFive();
+
+//question6
+function questionSix() {
+    var i =0;
+    while( i< 4){
+        var numbers = prompt('What\'s my favourate number between 1 to 10?');
+        console.log('What\'s my favourate number between 1 to 10?', numbers);
+        //answer is 3
+        var chanceT = 3 - i; 
+        if ( parseInt(numbers) === 3 ){
+            alert('Yeah. Correct!');
+            countCorrect += 1 ;
+            break;
+        } else {
+            if (parseInt(numbers) > 3 ){
+                alert('Too high, try a smaller one.');
+            } else {
+                alert('Too low, try a bigger one');
+            }
+            if (chanceT > 0){
+                alert('You still have ' + chanceT + ' chance')
+            } else {
+                alert('end of this question.')
+            }
+        }
+        i++;        
+    }
+}
+questionSix();
