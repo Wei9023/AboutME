@@ -4,24 +4,30 @@
         <title>AboutME</title>
         <link rel="stylesheet" href="css\reset.css">
         <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\960_12_col.css">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     </head>
     <body>
         <h1>About Me</h1>
-        <div>
+        <div class="container_12"> 
             <h2>Self-introduction</h2>
-            <img src="img\portrait.jpeg">
-            <ul>
-                <li>Name: Vanessa</li>
-                <li>Education: M.S. Philosophy</li>
-                <li>Job experience: Consulting/Education</li>
-                    <table>
+            <div class="grid_6">
+                <img id="portrait" src="img\portrait.jpeg">
+                <ul class="grid_6 list">
+                    <li>Name: Vanessa</li>
+                    <li>Education: M.S. Philosophy</li>
+                    <li>Job experience: Consulting/Education</li>
+                </ul>
+            </div>
+            <div class="container_12 intro">
+                <ul class="grid_6 table">    
+                    <table>                                
                         <tr>
                             <th>Title</th>
                             <th>From</th>
                             <th>to</th>
                             <th>Description</th>
-                        </tr>
+                        </tr>                                    
                         <tr>
                             <td>Consultant</td>
                             <td>2011</td>
@@ -38,26 +44,56 @@
                             <td>Manager</td>
                             <td>2015</td>
                             <td>2017</td>
-                            <td>As a manager of product department, we design courses for bank employees.</td>
-                            </tr>
-                    </table>
-            </ul>
+                            <td>As a manager of product department, we design courses for bank employees.</td>                          </tr>
+                        </table>
+                </ul>
+            </div>
+            
         </div>
-        <div>
+        <div class="container_12">
             <h2>Top ten place I want to visit!</h2>
-            <ol class='places'>
-                <li>Hawaii<img src="img\waikiki.jpg"></li>
-                <li>Japan<img src="img\japan.jpg"></li>
-                <li>Maldives<img src="img\maldives.jpg"></li>
-                <li>Fiji<img src="img\fiji.jpeg"></li>
-                <li>Maoritius<img src="img\maoritius.jpg"></li>
-                <li>Scotland<img src="img\scotland.jpg"></li>
-                <li>Denmark<img src="img\denmark.jpg"></li>    
-                <li>Iceland<img src="img\iceland.jpg"></li>
-                <li>Sichuan<img src="img\sichuan.jpeg"></li>
-                <li>Thailand<img src="img\thailand.jpg"></li>
-            </ol>
+            <div class='grid_3'>
+                <img src="img\waikiki.jpg" alt="Hawaii" width="220" height="125"/>
+                <p>Hawaii</p>
+            </div>
+            <div class='grid_3'>
+                <img src="img\japan.jpg" alt="Japan" width="220" height="125"/>
+                <p>Japen</p>
+            </div>
+            <div class='grid_3'>
+                <img src="img\maldives.jpg" alt="Maldives" width="220" height="125"/>
+                <p>Maldives</p>                
+            </div>
+            <div class='grid_3'>
+                <img src="img\fiji.jpeg" alt="Fiji" width="220" height="125"/>
+                <p>Fiji</p>                
+            </div>
+            <div class='grid_3'>
+                <img src="img\maoritius.jpg" alt="Maoritius" width="220" height="125"/>
+                <p>Maoritius</p>                
+            </div>
+            <div class='grid_3'>
+                <img src="img\scotland.jpg" alt="Scotland" width="220" height="125"/>
+                <p>Scotland</p>                
+            </div>
+            <div class='grid_3'>
+                <img src="img\denmark.jpg" alt="Denmark" width="220" height="125"/>
+                <p>Denmark</p>                
+            </div>
+            <div class='grid_3'>
+                <img src="img\iceland.jpg" alt="Iceland" width="220" height="125"/>
+                <p>Iceland</p>                
+            </div>
+            <div class='grid_3'>
+                <img src="img\sichuan.jpeg" alt="Sichuan" width="220" height="125"/>
+                <p>Sichuan</p>                
+            </div>
+            <div class='grid_3'>
+               <img src="img\thailand.jpg" alt="Thailand" width="220" height="125"/>
+               <p>Thailand</p>                
+            </div>
+
         </div>
     </body>
-    <script src="js\app.js"></script>
-</html>
+<!--<script src="js\app.js"></script>--> 
+</html>   
