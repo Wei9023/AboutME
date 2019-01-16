@@ -162,11 +162,3 @@ if(countCorrect === 7){
     alert('You got ' + countCorrect + 'out of 7 questions correct,  ' + user + '! ' + 'Better luck next time.')
 }
 
-
-questionOne();
-questionTwo();
-questionThree();
-questionFour();
-questionFive();
-questionSix();
-questionSeven();
