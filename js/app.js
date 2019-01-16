@@ -161,3 +161,12 @@ if(countCorrect === 7){
 } else {
     alert('You got ' + countCorrect + 'out of 7 questions correct,  ' + user + '! ' + 'Better luck next time.')
 }
+
+
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
